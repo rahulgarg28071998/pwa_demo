@@ -17,7 +17,7 @@ const App = () => {
     }
 
     return (
-        <div className="main-container">
+        <div className="main-container" style={{backgroundImage: `url(${'https://source.unsplash.com/user/erondu/1600x900'})`}}>
             <input type="text"className="search"placeholder="Search..."value={query}onChange={(e) => setQuery(e.target.value)}onKeyPress={search}/>
             {weather.main && (
                 <div className="city">
